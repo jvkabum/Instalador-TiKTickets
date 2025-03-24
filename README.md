@@ -1,0 +1,2 @@
+# Instalador-TiKTickets
+instalador automatico
