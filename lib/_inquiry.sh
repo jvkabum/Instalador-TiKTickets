@@ -103,7 +103,7 @@ get_user_inputs() {
 
   clear
   print_banner
-  read -p "🔗 Digite o repositório: ( https://github.com/jvkabum/Instalador-TiKTickets.git ) " repositorio
+  read -p "🔗 Digite o repositório: ( https://github.com/jvkabum/TikTickets-zing.git ) " repositorio
 
   clear
   print_banner
