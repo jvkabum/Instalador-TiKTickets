@@ -501,7 +501,7 @@ arruma_permissao() {
   sleep 2
 
   sudo su - root <<EOF
-  chown deploy.deploy /home/deploy/$(nome_instancia) -Rf
+  chown deploy.deploy /home/deploy/${nome_instancia} -Rf
   
 EOF
 
@@ -516,12 +516,9 @@ apagar_distsrc() {
   sleep 2
 
   sudo su - root <<EOF
-  cd /home/deploy/$(nome_instancia)/backend
+  cd /home/deploy/${nome_instancia}/backend
   rm dist/ -Rf
-  rm node_modules/ -Rf
-  rm package.json -Rf
-  rm package-lock.json -Rf
-  cd /home/deploy/$(nome_instancia)/frontend  
+  cd /home/deploy/${nome_instancia}/frontend  
   rm dist/ -Rf
   rm src/ -Rf
 EOF
